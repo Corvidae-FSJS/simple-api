@@ -1,0 +1,276 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "defaultDescription",
+    "version" : "0.1",
+    "title" : "defaultTitle"
+  },
+  "paths" : {
+    "/bands/7" : {
+      "delete" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model4"
+            }
+          }
+        }
+      }
+    },
+    "/bands" : {
+      "post" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/Model0"
+          },
+          "x-examples" : {
+            "application/json" : "    {\r\n      \"category\": \"Deathcore\",\r\n      \"name\": \"We Butter The Bread With Butter\",\r\n      \"display_name\": \"We Butter The Bread With Butter\",\r\n      \"description\": \"fast, loud, German, technical, screaming, plus hardcore, synths and electronics\",\r\n      \"_id\": 7\r\n    }"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model6"
+            }
+          }
+        }
+      }
+    },
+    "/genre/4" : {
+      "delete" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/Model2"
+          },
+          "x-examples" : {
+            "application/json" : "    {\r\n      \"name\": \"Deathcore\",\r\n      \"display_name\": \"Deathcore XXX\",\r\n      \"description\": \"basically fast, loud volume, technical, double bass, screaming, plus hardcore\",\r\n      \"_id\": 4\r\n    }"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model10"
+            }
+          }
+        }
+      }
+    },
+    "/{param0}/{param1}" : {
+      "put" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/Model3"
+          },
+          "x-examples" : {
+            "application/json" : "    {\r\n      \"category\": \"Deathcore\",\r\n      \"name\": \"We Butter The Bread With Butter\",\r\n      \"display_name\": \"Started as a joke band became a real band\",\r\n      \"description\": \"fast, loud, German, technical, screaming, plus hardcore, synths and electronics\",\r\n      \"_id\": 7\r\n    }"
+          }
+        }, {
+          "name" : "param0",
+          "in" : "path",
+          "description" : "Example values form path are: 'bands' and 'genre'",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "param1",
+          "in" : "path",
+          "description" : "Example values form path are: '7' and '4'",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model7"
+            }
+          }
+        }
+      }
+    },
+    "/{param2}" : {
+      "get" : {
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "param2",
+          "in" : "path",
+          "description" : "Example values form path are: 'bands' and 'genre'",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model5"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Model0" : {
+      "properties" : {
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model2" : {
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model3" : {
+      "properties" : {
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model4" : { },
+    "Array" : {
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Model5" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/definitions/Array"
+      }
+    },
+    "Model6" : {
+      "properties" : {
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model7" : {
+      "properties" : {
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        }
+      }
+    },
+    "Model8_Array" : {
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Model10" : { }
+  }
+}
