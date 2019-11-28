@@ -1,0 +1,79 @@
+{
+  "genre": [
+    {
+      "_id": 1,
+      "name": "Death Metal",
+      "display_name": "Death Metal",
+      "description": "fast, loud volume, technical, double bass, screaming"
+    },
+    {
+      "_id": 2,
+      "name": "Doom Metal",
+      "display_name": "Doom Metal",
+      "description": "slow, dynamic volume, simple, wall of sound, reverb, screaming, whispers"
+    },
+    {
+      "_id": 3,
+      "name": "Black Metal",
+      "display_name": "Black Metal",
+      "description": "fast, loud, poppy, tremelo, layered, reverb, double bass, screaming"
+    },
+    {
+      "name": "Deathcore",
+      "display_name": "Deathcore",
+      "description": "basically fast, loud volume, technical, double bass, screaming, plus hardcore",
+      "_id": 4
+    }
+  ],
+  "bands": [
+    {
+      "_id": 1,
+      "category": "Death Metal",
+      "name": "Varg",
+      "display_name": "Varg",
+      "description": "fast, loud, German, technical, screaming"
+    },
+    {
+      "_id": 2,
+      "category": "Death Metal",
+      "name": "In Flames",
+      "display_name": "In Flames",
+      "description": "melodic, Swedish, technical, screaming, clean vocals"
+    },
+    {
+      "_id": 3,
+      "category": "Doom Metal",
+      "name": "Light Bearer",
+      "display_name": "Light Bearer",
+      "description": "cinematic, English, epic, narrative story-telling, anti-religious, dynamic, builds, screaming"
+    },
+    {
+      "_id": 4,
+      "category": "Doom Metal",
+      "name": "Cult of Luna",
+      "display_name": "Cult of Luna",
+      "description": "Swedish, epic, two drummers, three guitarists, dynamic, builds, screaming"
+    },
+    {
+      "_id": 5,
+      "category": "Black Metal",
+      "name": "Astronoid",
+      "display_name": "Astronoid",
+      "description": "fast, loud, American, double bass, happy, technical solos, layered, wall of sound, falsetto"
+    },
+    {
+      "_id": 6,
+      "category": "Black Metal",
+      "name": "Dödsrit",
+      "display_name": "Dödsrit",
+      "description": "Swedish, double bass, builds, cinematic, technical, screaming, whispers"
+    },
+    {
+      "category": "Deathcore",
+      "name": "We Butter The Bread With Butter",
+      "display_name": "Started as a joke band became a real band",
+      "description": "fast, loud, German, technical, screaming, plus hardcore, synths and electronics",
+      "_id": 7
+    }
+  ]
+}
